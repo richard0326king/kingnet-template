@@ -1,0 +1,27 @@
+@import 'pagination';
+@import 'bootstrap-select';
+
+.mt-6 {
+  margin-top: 6px;
+}
+.mb-6 {
+  margin-bottom: 6px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-xs-20 {
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.pd-20 {
+  padding-bottom: 20px;
+}
+
+.d-block {
+  display: block;
+}

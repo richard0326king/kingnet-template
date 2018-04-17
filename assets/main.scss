@@ -1,0 +1,55 @@
+@import './component/variables';
+.preStyle {
+  white-space: pre-wrap;
+  tab-size: 2 !important;
+  background: #fafafa;
+}
+
+.pre-inline {
+  white-space: pre-line !important;
+}
+
+.pre code {
+  white-space: pre !important;
+  overflow: auto !important;
+}
+
+.preStyle code {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+  font: 400 15px/22px 'PT Mono', monospace;
+}
+
+.main-content .page-content .panel .panel-content .btn:not(.btn-sm) i {
+  padding-right: 0;
+}
+
+// 使用者設定
+.topnavTitle {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+}
+.fixed-topbar .topbar {
+  left: 0;
+}
+
+.text-star {
+  font-size: 20px;
+  color: red;
+}
+
+.d-xs-inline {
+  @media (max-width: 767px) {
+    display: inline-block !important;
+  }
+}

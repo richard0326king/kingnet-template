@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="./assets/global/images/favicon.png" type="image/png">
+    <title>今網智慧科技管理系統</title>
+    <meta name="description" content="創新智慧科技-提供最值得信賴的社區生活服務">
+    <link href="./assets/global/css/style.css" rel="stylesheet">
+    <link href="./assets/global/css/theme.css" rel="stylesheet">
+    <link href="./assets/global/css/ui.css" rel="stylesheet">
+    <link href="./assets/admin/layout1/css/layout.css" rel="stylesheet">
+    <!-- BEGIN PAGE STYLE -->
+    <link href="./assets/global/plugins/metrojs/metrojs.min.css" rel="stylesheet">
+    <link href="./assets/global/plugins/maps-amcharts/ammap/ammap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="./assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <!-- bootstrap-select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <!-- END PAGE STYLE -->
+    <script src="./assets/global/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+
+<body class="fixed-topbar fixed-sidebar theme-sdtd color-default dashboard bg-light-purple">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section>
+        <!-- 左側選單 -->
+        <div class="sidebar">
+            <div class="logopanel">
+                <h1>
+                    <a href="dashboard.html"></a>
+                </h1>
+            </div>
+            <div class="sidebar-inner">
+                <div class="sidebar-top">
+                    <div class="userlogged clearfix">
+                        <i class="icon icons-faces-users-01"></i>
+                        <div class="user-details">
+                            <h4>盧琬瑜</h4>
+                            <div class="dropdown user-login">
+                                <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"
+                                    data-delay="300">
+                                    <i class="online"></i>
+                                    <span>Available</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="busy"></i>
+                                            <span>Busy</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="turquoise"></i>
+                                            <span>Invisible</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="away"></i>
+                                            <span>Away</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav nav-sidebar">
+                    <li class="nav-parent">
+                        <a href="">
+                            <i class="icon-cup"></i>
+                            <span>組件</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="children collapse in" style="display: block;">
+                            <li>
+                                <a href="#Buttons">
+                                    <span class="pull-right badge badge-primary">New</span>Buttons</a>
+                            </li>
+                            <li>
+                                <a href="#Tabs">Tabs</a>
+                            </li>
+                            <li>
+                                <a href="#Table">Table</a>
+                            </li>
+                            <li>
+                                <a href="#Modal"> Modal</a>
+                            </li>
+                            <li>
+                                <a href="#Pagination">Pagination</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a href="">
+                            <i class="icon-cup"></i>
+                            <span>套件</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="children collapse in" style="display: block;">
+                            <li>
+                                <a href="#Select2">select</a>
+                            </li>
+                            <li>
+                                <a href="#icheck">icheck</a>
+                            </li>
+                            <li>
+                                <a href="#datepicker">datepicker</a>
+                            </li>
+                            <li>
+                                <a href="#FileUpload">FileUpload</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a href="">
+                            <i class="icon-cup"></i>
+                            <span>頁面</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="children collapse in" style="display: block;">
+
+                            <li>
+                                <a href="Layout.html">Layout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- SIDEBAR WIDGET FOLDERS -->
+
+
+            </div>
+        </div>
+        <!-- /左側選單 -->
+        <div class="main-content">
+            <!-- BEGIN TOPBAR -->
+            <div class="topbar">
+                <div class="header-left">
+                    <div class="topnav">
+                        <a class="menutoggle" href="#" data-toggle="sidebar-collapsed">
+                            <span class="menu__handle">
+                                <span>Menu</span>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- END TOPBAR -->
+            <div class="page-content">
+                <!-- 按鈕 -->
+                <div id="Buttons">
+                    <div class="header">
+                        <h2>
+                            <strong>Buttons</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 portlets ui-sortable">
+                            <div class="panel">
+                                <div class="panel-header panel-controls">
+                                    <h3>
+                                        <i class="icon-layers"></i> Choose your
+                                        <strong>Style</strong>
+                                    </h3>
+                                    <div class="control-btn">
+                                        <a href="#" class="panel-reload hidden">
+                                            <i class="icon-reload"></i>
+                                        </a>
+                                        <a class="hidden" id="dropdownMenu1" data-toggle="dropdown">
+                                            <i class="icon-settings"></i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li>
+                                                <a href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Another action</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Something else here</a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="panel-popout hidden tt" title="Pop Out/In">
+                                            <i class="icons-office-58"></i>
+                                        </a>
+                                        <a href="#" class="panel-maximize hidden">
+                                            <i class="icon-size-fullscreen"></i>
+                                        </a>
+                                        <a href="#" class="panel-toggle">
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <a href="#" class="panel-close">
+                                            <i class="icon-trash"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="panel-content">
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h5>button</h5>
+                                            <button type="button" class="btn btn-white">White</button>
+                                            <button type="button" class="btn btn-default">Default</button>
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-blue">Blue</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                            <h5>button + icon</h5>
+                                            <button type="button" class="btn btn-dark">
+                                                <i class="fa fa-plus"></i> Dark</button>
+                                            <h5>程式碼</h5>
+                                            <hr>
+                                            <pre class="preStyle">
+                    <code class="html pre-inline ">
+                        #button style
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-white&quot;&gt;White&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-blue&quot;&gt;Blue&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+
+                        #button + icon
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;&lt;i class=&quot;fa fa-plus&quot;&gt;&lt;/i&gt;Dark&lt;/button&gt;
+                    </code>
+                </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 結束 按鈕 -->
+                <!-- Tabs -->
+                <div id="Tabs">
+                    <div class="header">
+                        <h2>
+                            <strong>Tabs</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+                            <div class="panel">
+
+                                <div class="panel-content">
+
+                                    <ul class="nav nav-tabs nav-primary">
+                                        <li class="">
+                                            <a href="#tab2_1" data-toggle="tab" aria-expanded="false">
+                                                <i class="icon-home"></i>頁籤ㄧ</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#tab2_2" data-toggle="tab" aria-expanded="false">
+                                                <i class="icon-user"></i> 頁籤二</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#tab2_3" data-toggle="tab" aria-expanded="true">
+                                                <i class="icon-cloud-download"></i>頁籤三</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade" id="tab2_1">
+                                            內容一
+                                        </div>
+                                        <div class="tab-pane fade" id="tab2_2">
+                                            內容二
+                                        </div>
+                                        <div class="tab-pane fade active in" id="tab2_3">
+                                            內容三
+                                        </div>
+                                    </div>
+                                    <h5>程式碼</h5>
+                                    <hr>
+                                    <pre class="preStyle">
+<code class="html">
+    &lt;ul class=&quot;nav nav-tabs nav-primary&quot;&gt;
+        &lt;li class=&quot;&quot;&gt;
+            &lt;a href=&quot;#tab2_1&quot; data-toggle=&quot;tab&quot; aria-expanded=&quot;false&quot;&gt;
+                &lt;i class=&quot;icon-home&quot;&gt;&lt;/i&gt;頁籤ㄧ&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;&quot;&gt;
+            &lt;a href=&quot;#tab2_2&quot; data-toggle=&quot;tab&quot; aria-expanded=&quot;false&quot;&gt;
+                &lt;i class=&quot;icon-user&quot;&gt;&lt;/i&gt; 頁籤二&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;active&quot;&gt;
+            &lt;a href=&quot;#tab2_3&quot; data-toggle=&quot;tab&quot; aria-expanded=&quot;true&quot;&gt;
+                &lt;i class=&quot;icon-cloud-download&quot;&gt;&lt;/i&gt;頁籤三&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+        &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab2_1&quot;&gt;
+            內容一
+        &lt;/div&gt;
+        &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab2_2&quot;&gt;
+            內容二
+        &lt;/div&gt;
+        &lt;div class=&quot;tab-pane fade active in&quot; id=&quot;tab2_3&quot;&gt;
+            內容三
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Tabs 結束 -->
+                <!-- Table -->
+                <div id="Table">
+                    <div class="header">
+                        <h2>
+                            <strong>Table</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+                            <div class="panel">
+                                <div class="panel-content">
+                                    <h5>basic</h5>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>編號</th>
+                                                <th>公司名稱</th>
+                                                <th>公司帳戶</th>
+                                                <th>據點</th>
+                                                <th>功能</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Steve</td>
+                                                <td>Mac Queen</td>
+                                                <td>@steve</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h5>程式碼</h5>
+                                    <hr>
+                                    <pre class="preStyle">
+    <code class="html">
+&lt;table class=&quot;table table-striped&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;編號&lt;/th&gt;
+            &lt;th&gt;公司名稱&lt;/th&gt;
+            &lt;th&gt;公司帳戶&lt;/th&gt;
+            &lt;th&gt;據點&lt;/th&gt;
+            &lt;th&gt;功能&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Mark&lt;/td&gt;
+            &lt;td&gt;Otto&lt;/td&gt;
+            &lt;td&gt;@mdo&lt;/td&gt;
+            &lt;td&gt;
+                &lt;button class=&quot;btn btn-primary&quot;&gt;
+                    &lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-danger&quot;&gt;
+                    &lt;i class=&quot;fa fa-trash-o&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Jacob&lt;/td&gt;
+            &lt;td&gt;Thornton&lt;/td&gt;
+            &lt;td&gt;@fat&lt;/td&gt;
+            &lt;td&gt;
+                &lt;button class=&quot;btn btn-primary&quot;&gt;
+                    &lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-danger&quot;&gt;
+                    &lt;i class=&quot;fa fa-trash-o&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Larry&lt;/td&gt;
+            &lt;td&gt;the Bird&lt;/td&gt;
+            &lt;td&gt;@twitter&lt;/td&gt;
+            &lt;td&gt;
+                &lt;button class=&quot;btn btn-primary&quot;&gt;
+                    &lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-danger&quot;&gt;
+                    &lt;i class=&quot;fa fa-trash-o&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;Steve&lt;/td&gt;
+            &lt;td&gt;Mac Queen&lt;/td&gt;
+            &lt;td&gt;@steve&lt;/td&gt;
+            &lt;td&gt;
+                &lt;button class=&quot;btn btn-primary&quot;&gt;
+                    &lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-danger&quot;&gt;
+                    &lt;i class=&quot;fa fa-trash-o&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+    </code>
+    </pre>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Table 結束 -->
+                <!-- Table -->
+                <div id="Pagination">
+                    <div class="header">
+                        <h2>
+                            <strong>Pagination</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+                            <div class="panel">
+                                <div class="panel-content">
+                                    <h5>頁籤</h5>
+                                    <ul class="pagination pagniation-default">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">
+                                                    <i class="fa fa-angle-double-left"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <i class="fa fa-angle-double-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <h5>程式碼</h5>
+                                    <hr>
+                                    <pre class="preStyle">
+    <code class="html">
+&lt;ul class=&quot;pagination pagniation-default&quot;&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot;&gt;
+                &lt;i class=&quot;fa fa-angle-double-left&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+            &lt;i class=&quot;fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+    </code>
+    </pre>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Table 結束 -->
+                <!-- bootstrap-select -->
+                <div id="Select2">
+                    <div class="header">
+                        <h2>
+                            <strong>bootstrap-select</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+
+                            <div class="panel">
+                                <div class="panel-content">
+                                    <h5>basic</h5>
+                                    <select class="bootstrap-select-basic bs-select-default">
+                                        <option>請選擇</option>
+                                        <option>基隆市</option>
+                                        <option>台北市</option>
+                                        <option>台中市</option>
+                                    </select>
+
+                                    <h5>程式碼</h5>
+                                    <hr>
+                                    <pre class="preStyle pre">
+    #連結
+    <code class="html">
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css&quot;&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js &quot;&gt;&lt;/script&gt;
+    </code>
+    #Html
+    <code class="html">
+&lt;select class=&quot;bootstrap-select-basic bs-select-default&quot;&gt;
+    &lt;option&gt;請選擇&lt;/option&gt;
+    &lt;option&gt;基隆市&lt;/option&gt;
+    &lt;option&gt;台北市&lt;/option&gt;
+    &lt;option&gt;台中市&lt;/option&gt;
+&lt;/select&gt;
+    </code>
+    #JavaScript
+    <code class="javascipt">
+$(&#x27;.bootstrap-select-basic&#x27;).selectpicker();
+    </code>
+    </pre>
+                                    <h5>搜尋功能</h5>
+                                    <select class="bootstrap-select bs-select-default" title="地區" data-actions-box="true" data-live-search="true" multiple>
+                                        <option>基隆市</option>
+                                        <option>台北市</option>
+                                        <option>台中市</option>
+                                    </select>
+
+                                    <h5>程式碼</h5>
+                                    <hr>
+                                    <pre class="preStyle pre">
+#連結
+<code class="html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js &quot;&gt;&lt;/script&gt;
+</code>
+#Html
+<code class="html">
+&lt;select class=&quot;bootstrap-select bs-select-default&quot; title=&quot;地區&quot; data-actions-box=&quot;true&quot; data-live-search=&quot;true&quot; multiple&gt;
+    &lt;option&gt;基隆市&lt;/option&gt;
+    &lt;option&gt;台北市&lt;/option&gt;
+    &lt;option&gt;台中市&lt;/option&gt;
+&lt;/select&gt;
+</code>
+#JavaScript
+<code class="javascipt">
+$(&#x27;.bootstrap-select&#x27;).selectpicker({
+    &#x27;width&#x27;: &#x27;100%&#x27;,
+    &#x27;actionsBox&#x27;: true,
+    &#x27;selectAllText&#x27;: &#x27;全選&#x27;,
+    &#x27;deselectAllText&#x27;: &#x27;取消全選&#x27;,
+    &#x27;dropdownAlignRight&#x27;: &#x27;auto&#x27;,
+    &#x27;liveSearch&#x27;: true,
+    &#x27;liveSearchNormalize&#x27;: true,
+    &#x27;liveSearchPlaceholder&#x27;: &#x27;搜尋關鍵字&#x27;,
+    &#x27;liveSearchStyle&#x27;: &#x27;contains&#x27;,
+    &#x27;noneSelectedText&#x27;: &#x27;請選擇一個項目&#x27;,
+    &#x27;noneResultsText&#x27;: &#x27;找不到含有 {0} 的項目&#x27;,
+    &#x27;showIcon&#x27;: false
+});
+</code>
+</pre>
+                                    <h6>官方連結</h6>
+                                    <a href="http://silviomoreto.github.io/bootstrap-select/" target="_blank">http://silviomoreto.github.io/bootstrap-select/</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- bootstrap-select 結束 -->
+                <!-- Modal -->
+                <div id="Modal">
+                    <div class="header">
+                        <h2>
+                            <strong>Modal</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+                            <div class="panel">
+                                <div class="panel-content">
+
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-responsive">彈窗</a>
+                                    <hr>
+                                    <h4>程式碼</h4>
+
+                                    <pre class="preStyle pre">
+<code class="html">
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#modal-responsive&quot;&gt;彈窗&lt;/a&gt;
+
+&lt;div class=&quot;modal fade&quot; id=&quot;modal-responsive&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-md&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;
+                    &lt;i class=&quot;icons-office-52&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot;&gt;
+                    &lt;strong&gt;新增公司帳戶&lt;/strong&gt;
+                &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body row&quot;&gt;
+                &lt;div class=&quot;col-sm-8 col-sm-offset-2&quot;&gt;
+                    &lt;div class=&quot;form-horizontal&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;name&quot; class=&quot;control-label col-sm-3&quot;&gt;公司名稱&lt;/label&gt;
+                            &lt;div class=&quot;col-sm-9&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;name&quot; class=&quot;control-label col-sm-3&quot;&gt;公司帳號&lt;/label&gt;
+                            &lt;div class=&quot;col-sm-9&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;hr&gt;
+                        &lt;h4&gt;新增[所有者]&lt;/h4&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;name&quot; class=&quot;control-label col-sm-3&quot;&gt;姓名&lt;/label&gt;
+                            &lt;div class=&quot;col-sm-9&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;name&quot; class=&quot;control-label col-sm-3&quot;&gt;身份&lt;/label&gt;
+                            &lt;div class=&quot;col-sm-9&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;name&quot; class=&quot;control-label col-sm-3&quot;&gt;帳號&lt;/label&gt;
+                            &lt;div class=&quot;col-sm-9&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;name&quot; class=&quot;control-label col-sm-3&quot;&gt;密碼&lt;/label&gt;
+                            &lt;div class=&quot;col-sm-9&quot;&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer text-center&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-embossed bnt-square&quot; data-dismiss=&quot;modal&quot;&gt;確定&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-embossed bnt-square&quot; data-dismiss=&quot;modal&quot;&gt;取消&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal 結束 -->
+                <!-- icheck -->
+                <div id="icheck">
+                    <div class="header">
+                        <h2>
+                            <strong>icheck</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+                            <div class="panel">
+                                <div class="panel-content">
+                                    <div class="form-group clearfix">
+
+                                        <div class="col-xs-6">
+                                            <p>
+                                                <strong>checkbox</strong>
+                                            </p>
+                                            <div class="input-group">
+                                                <div class="icheck-list">
+                                                    <label>
+                                                        <input type="checkbox" data-checkbox="icheckbox_square-blue"> Checkbox 1</label>
+                                                    <label>
+                                                        <input type="checkbox" checked data-checkbox="icheckbox_square-blue"> Checkbox 2</label>
+                                                    <label>
+                                                        <input type="checkbox" data-checkbox="icheckbox_square-blue"> Checkbox 3</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>
+                                                <strong>radio</strong>
+                                            </p>
+                                            <div class="input-group">
+                                                <div class="icheck-list">
+                                                    <label>
+                                                        <input type="radio" name="radio1" data-radio="iradio_square-blue"> Radio Button 1</label>
+                                                    <label>
+                                                        <input type="radio" name="radio1" checked data-radio="iradio_square-blue"> Radio Button 2</label>
+                                                    <label>
+                                                        <input type="radio" name="radio1" data-radio="iradio_square-blue"> Radio Button 3</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <h4>程式碼</h4>
+
+                                    <pre class="preStyle pre">
+<code class="html">
+#checkbox
+&lt;div class=&quot;icheck-list&quot;&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; data-checkbox=&quot;icheckbox_square-blue&quot;&gt; Checkbox 1&lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; checked data-checkbox=&quot;icheckbox_square-blue&quot;&gt; Checkbox 2&lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; data-checkbox=&quot;icheckbox_square-blue&quot;&gt; Checkbox 3&lt;/label&gt;
+&lt;/div&gt;
+</code>
+
+<code class="html">
+#radio
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;icheck-list&quot;&gt;
+        &lt;label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; data-radio=&quot;iradio_square-blue&quot;&gt; Radio Button 1&lt;/label&gt;
+        &lt;label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; checked data-radio=&quot;iradio_square-blue&quot;&gt; Radio Button 2&lt;/label&gt;
+        &lt;label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; data-radio=&quot;iradio_square-blue&quot;&gt; Radio Button 3&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                    <h6>官方連結</h6>
+                                    <a href="http://icheck.fronteed.com/" target="_blank">http://icheck.fronteed.com/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- icheck 結束 -->
+                <!-- bootstrap datepicker -->
+                <div id="datepicker">
+                    <div class="header">
+                        <h2>
+                            <strong>bootstrap datepicker</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+                            <div class="panel">
+                                <div class="panel-content">
+                                    <div class="form-group">
+                                        <p>
+                                            <strong>basic</strong>
+                                        </p>
+                                        <input class="bs-datepicker">
+                                        <h5>icon</h5>
+                                        <div class="prepend-icon">
+                                            <input type="text" name="timepicker" class="bs-datepicker form-control" placeholder="Select a date..." data-orientation="top">
+                                            <i class="icon-calendar"></i>
+                                        </div>
+                                        <h5>date range</h5>
+                                        <div class="input-group input-daterange">
+                                            <input type="text" class="form-control" placeholder="請選擇開始時間">
+                                            <div class="input-group-addon">至</div>
+                                            <input type="text" class="form-control" placeholder="請選擇結束時間">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h4>程式碼</h4>
+
+                                    <pre class="preStyle pre">
+<code class="html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css&quot;&gt;
+&lt;script src=&quot;./assets/global/plugins/multidatepicker/multidatespicker.min.js &quot;&gt;&lt;/script&gt;
+</code>
+                            
+<code class="html">
+#basic
+&lt;input class=&quot;bs-datepicker&quot;&gt;
+
+#icon
+&lt;div class=&quot;prepend-icon&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;timepicker&quot; class=&quot;bs-datepicker form-control&quot; placeholder=&quot;Select a date...&quot; data-orientation=&quot;top&quot;&gt;
+&lt;i class=&quot;icon-calendar&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+#date range
+&lt;div class=&quot;input-group input-daterange&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; value=&quot;2012-04-05&quot;&gt;
+    &lt;div class=&quot;input-group-addon&quot;&gt;to&lt;/div&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; value=&quot;2012-04-19&quot;&gt;
+&lt;/div&gt;
+</code>
+
+<code class="javascipt">
+#basic
+$(&#x27;.bs-datepicker&#x27;).datepicker({
+    format: &#x27;yyyy/mm/dd&#x27;,
+    startDate: &#x27;-3d&#x27;
+});
+
+#date range
+$(&#x27;.input-daterange&#x27;).datepicker({
+    format: &#x27;yyyy/mm/dd&#x27;,
+    startDate: &#x27;-3d&#x27;
+});
+        </code>
+</pre>
+
+                                    <h6>官方連結</h6>
+                                    <a href="https://bootstrap-datepicker.readthedocs.io/en/stable/" target="_blank">https://bootstrap-datepicker.readthedocs.io/en/stable/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bootstrap datepicker 結束 -->
+                <!-- File Upload -->
+                <div id="FileUpload">
+                    <div class="header">
+                        <h2>
+                            <strong>File Upload</strong>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 portlets ui-sortable">
+                            <div class="panel">
+                                <div class="panel-content">
+                                    <div class="form-group">
+                                        <p>
+                                            <strong>basic</strong>
+                                        </p>
+                                        <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                            <div class="form-control" data-trigger="fileinput">
+                                                <i class="glyphicon glyphicon-file fileinput-exists"></i>
+                                                <span class="fileinput-filename"></span>
+                                            </div>
+                                            <span class="input-group-addon btn btn-default btn-file">
+                                                <span class="fileinput-new">選擇檔案</span>
+                                                <span class="fileinput-exists">Change</span>
+                                                <input type="file" name="...">
+                                            </span>
+                                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                        </div>
+                                        <h5>圖片預覽</h5>
+                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                            <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                            <div>
+                                                <span class="btn btn-default btn-file">
+                                                    <span class="fileinput-new">選擇檔案</span>
+                                                    <span class="fileinput-exists">Change</span>
+                                                    <input type="file" name="...">
+                                                </span>
+                                                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                            </div>
+                                            <div class="fileinput-new thumbnail">
+                                                <img data-src="" src="../assets/global/images/gallery/3.jpg" class="img-responsive" alt="gallery 3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h4>程式碼</h4>
+
+                                    <pre class="preStyle pre">
+
+<code class="html">
+#basic
+&lt;div class=&quot;fileinput fileinput-new input-group&quot; data-provides=&quot;fileinput&quot;&gt;
+    &lt;div class=&quot;form-control&quot; data-trigger=&quot;fileinput&quot;&gt;
+        &lt;i class=&quot;glyphicon glyphicon-file fileinput-exists&quot;&gt;&lt;/i&gt;
+        &lt;span class=&quot;fileinput-filename&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;input-group-addon btn btn-default btn-file&quot;&gt;
+        &lt;span class=&quot;fileinput-new&quot;&gt;選擇檔案&lt;/span&gt;
+        &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+        &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+    &lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;input-group-addon btn btn-default fileinput-exists&quot; data-dismiss=&quot;fileinput&quot;&gt;Remove&lt;/a&gt;
+&lt;/div&gt;
+
+#圖片預覽
+&lt;div class=&quot;fileinput fileinput-new&quot; data-provides=&quot;fileinput&quot;&gt;
+    &lt;div class=&quot;fileinput-preview fileinput-exists thumbnail&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;
+        &lt;span class=&quot;btn btn-default btn-file&quot;&gt;
+            &lt;span class=&quot;fileinput-new&quot;&gt;選擇檔案&lt;/span&gt;
+            &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+            &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+        &lt;/span&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-default fileinput-exists&quot; data-dismiss=&quot;fileinput&quot;&gt;Remove&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fileinput-new thumbnail&quot;&gt;
+        &lt;img data-src=&quot;&quot; src=&quot;../assets/global/images/gallery/3.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;gallery 3&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FileUpload 結束 -->
+
+                <div class="footer ">
+                    <div class="copyright ">
+                        <p class="pull-left sm-pull-reset ">
+                            <span>Copyright
+                                <span class="copyright ">©</span> 2015 </span>
+                            <span>THEMES LAB</span>.
+                            <span>All rights reserved. </span>
+                        </p>
+                        <p class="pull-right sm-pull-reset ">
+                            <span>
+                                <a href="# " class="m-r-10 ">Support</a> |
+                                <a href="# " class="m-l-10 m-r-10 ">Terms of use</a> |
+                                <a href="# " class="m-l-10 ">Privacy Policy</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- END MAIN CONTENT -->
+
+    </section>
+
+    <!-- 彈窗 -->
+    <div class="modal fade" id="modal-responsive" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="icons-office-52"></i>
+                    </button>
+                    <h4 class="modal-title">
+                        <strong>新增公司帳戶</strong>
+                    </h4>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-3">公司名稱</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-3">公司帳號</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>新增[所有者]</h4>
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-3">姓名</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-3">身份</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-3">帳號</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="control-label col-sm-3">密碼</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary btn-embossed bnt-square" data-dismiss="modal">
+                        確定</button>
+                    <button type="button" class="btn btn-default btn-embossed bnt-square" data-dismiss="modal">
+                        取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/global/plugins/jquery/jquery-1.11.1.min.js "></script>
+    <script src="./assets/global/plugins/jquery/jquery-migrate-1.2.1.min.js "></script>
+    <script src="./assets/global/plugins/jquery-ui/jquery-ui-1.11.2.min.js "></script>
+    <script src="./assets/global/plugins/gsap/main-gsap.min.js "></script>
+    <script src="./assets/global/plugins/bootstrap/js/bootstrap.min.js "></script>
+    <script src="./assets/global/plugins/jquery-cookies/jquery.cookies.min.js "></script>
+    <!-- Jquery Cookies, for theme -->
+    <script src="./assets/global/plugins/jquery-block-ui/jquery.blockUI.min.js "></script>
+    <!-- simulate synchronous behavior when using AJAX -->
+    <script src="./assets/global/plugins/bootbox/bootbox.min.js "></script>
+    <!-- Modal with Validation -->
+    <script src="./assets/global/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js "></script>
+    <!-- Custom Scrollbar sidebar -->
+    <script src="./assets/global/plugins/bootstrap-dropdown/bootstrap-hover-dropdown.min.js "></script>
+    <!-- Show Dropdown on Mouseover -->
+    <script src="./assets/global/plugins/charts-sparkline/sparkline.min.js "></script>
+    <!-- Charts Sparkline -->
+    <script src="./assets/global/plugins/retina/retina.min.js "></script>
+    <!-- Retina Display -->
+    <script src="./assets/global/plugins/select2/select2.min.js "></script>
+    <!-- Select Inputs -->
+    <script src="./assets/global/plugins/icheck/icheck.min.js "></script>
+    <!-- Checkbox & Radio Inputs -->
+    <script src="./assets/global/plugins/backstretch/backstretch.min.js "></script>
+    <!-- Background Image -->
+    <script src="./assets/global/plugins/bootstrap-progressbar/bootstrap-progressbar.min.js "></script>
+    <!-- Animated Progress Bar -->
+    <script src="./assets/global/js/builder.js "></script>
+    <!-- Theme Builder -->
+    <script src="./assets/global/js/sidebar_hover.js "></script>
+    <!-- Sidebar on Hover -->
+    <script src="./assets/global/js/application.js "></script>
+    <!-- Main Application Script -->
+    <script src="./assets/global/js/plugins.js "></script>
+    <!-- Main Plugin Initialization Script -->
+    <script src="./assets/global/js/widgets/notes.js "></script>
+    <!-- Notes Widget -->
+    <script src="./assets/global/js/quickview.js "></script>
+    <!-- Chat Script -->
+    <script src="./assets/global/js/pages/search.js "></script>
+    <!-- Search Script -->
+    <!-- BEGIN PAGE SCRIPT -->
+    <script src="./assets/global/plugins/noty/jquery.noty.packaged.min.js "></script>
+    <!-- Notifications -->
+    <script src="./assets/global/plugins/bootstrap-editable/js/bootstrap-editable.min.js "></script>
+    <!-- Inline Edition X-editable -->
+    <script src="./assets/global/plugins/bootstrap-context-menu/bootstrap-contextmenu.min.js "></script>
+    <!-- Context Menu -->
+    <script src="./assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!-- bootstrap datepicker -->
+    <script src="./assets/global/plugins/multidatepicker/multidatespicker.min.js "></script>
+    <!-- Multi dates Picker -->
+    <script src="./assets/global/js/widgets/todo_list.js "></script>
+    <script src="./assets/global/plugins/metrojs/metrojs.min.js "></script>
+    <!-- Flipping Panel -->
+    <script src="./assets/global/plugins/charts-chartjs/Chart.min.js "></script>
+    <!-- ChartJS Chart -->
+    <script src="./assets/global/plugins/charts-highstock/js/highstock.min.js "></script>
+    <!-- financial Charts -->
+    <script src="./assets/global/plugins/charts-highstock/js/modules/exporting.min.js "></script>
+    <!-- Financial Charts Export Tool -->
+    <script src="./assets/global/plugins/maps-amcharts/ammap/ammap.min.js "></script>
+    <!-- Vector Map -->
+    <script src="./assets/global/plugins/maps-amcharts/ammap/maps/js/worldLow.min.js "></script>
+    <!-- Vector World Map  -->
+    <script src="./assets/global/plugins/maps-amcharts/ammap/themes/black.min.js "></script>
+    <!-- Vector Map Black Theme -->
+    <script src="./assets/global/plugins/skycons/skycons.min.js "></script>
+    <!-- Animated Weather Icons -->
+    <script src="./assets/global/plugins/simple-weather/jquery.simpleWeather.js "></script>
+    <!-- Weather Plugin -->
+    <script src="./assets/global/js/widgets/widget_weather.js "></script>
+    <!-- <script src="./assets/global/js/pages/dashboard.js "></script> -->
+    <!-- END PAGE SCRIPT -->
+    <script src="./assets/admin/layout1/js/layout.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js "></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!-- bootstrap-select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js "></script>
+    <script>
+        $('.bootstrap-select-basic').selectpicker();
+        $('.bootstrap-select').selectpicker({
+            'width': '100%',
+            'actionsBox': true,
+            'selectAllText': '全選',
+            'deselectAllText': '取消全選',
+            'dropdownAlignRight': 'auto',
+            'liveSearch': true,
+            'liveSearchNormalize': true,
+            'liveSearchPlaceholder': '搜尋關鍵字',
+            'liveSearchStyle': 'contains',
+            'noneSelectedText': '請選擇一個項目',
+            'noneResultsText': '找不到含有 {0} 的項目',
+            'showIcon': false
+        });
+    </script>
+
+    <!-- 錨點設定 -->
+    <script>
+        if (window.location.hash.indexOf('#') >= 0) {
+            $('html,body').animate({
+                    scrollTop: ($(window.location.hash).offset().top - 50) + "px"
+                },
+                300);
+        };
+        $('.sidebar a[href^=#][href!=#]').click(function () {
+            var target = document.getElementById(this.hash.slice(1));
+            if (!target) return;
+            var targetOffset = $(target).offset().top - 50;
+            $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+                300);
+            return false;
+        });
+    </script>
+
+    <script>
+        $('.bs-datepicker').datepicker({
+            format: 'yyyy/mm/dd',
+            startDate: '-3d'
+        });
+        $('.input-daterange').datepicker({
+            format: 'yyyy/mm/dd',
+            startDate: '-3d'
+        });
+    </script>

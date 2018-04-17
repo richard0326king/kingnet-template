@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="./assets/global/images/favicon.png" type="image/png">
+    <title>今網智慧科技管理系統</title>
+    <meta name="description" content="創新智慧科技-提供最值得信賴的社區生活服務">
+    <!-- 模板的 css -->
+    <link href="./assets/global/css/style.css" rel="stylesheet">
+    <link href="./assets/global/css/theme.css" rel="stylesheet">
+    <link href="./assets/global/css/ui.css" rel="stylesheet">
+    <link href="./assets/admin/layout1/css/layout.css" rel="stylesheet">
+    <link href="./assets/global/plugins/metrojs/metrojs.min.css" rel="stylesheet">
+    <link href="./assets/global/plugins/maps-amcharts/ammap/ammap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./assets/global/css/icons/font-awesome/font-awesome.min.css">
+    <!-- select2 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <!-- 主要 css -->
+    <link rel="stylesheet" href="./assets/main.css">
+    <!-- END PAGE STYLE -->
+    <script src="./assets/global/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+</head>
+
+<body class="fixed-topbar fixed-sidebar theme-sdtd color-default dashboard bg-light-purple">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section>
+        <!-- 左側選單 -->
+        <div class="sidebar">
+            <div class="logopanel">
+                <h1>
+                    <a href="dashboard.html"></a>
+                </h1>
+            </div>
+            <div class="sidebar-inner">
+                <div class="sidebar-top">
+                    <div class="userlogged clearfix">
+                        <i class="icon icons-faces-users-01"></i>
+                        <div class="user-details">
+                            <h4>盧琬瑜</h4>
+                            <div class="dropdown user-login">
+                                <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"
+                                    data-delay="300">
+                                    <i class="online"></i>
+                                    <span>Available</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="busy"></i>
+                                            <span>Busy</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="turquoise"></i>
+                                            <span>Invisible</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="away"></i>
+                                            <span>Away</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-title">
+                    Navigation
+                    <div class="pull-right menu-settings">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
+                            <i class="icon-settings"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" id="reorder-menu" class="reorder-menu">Reorder menu</a>
+                            </li>
+                            <li>
+                                <a href="#" id="remove-menu" class="remove-menu">Remove elements</a>
+                            </li>
+                            <li>
+                                <a href="#" id="hide-top-sidebar" class="hide-top-sidebar">Hide user &amp; search</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav nav-sidebar">
+                    <li class=" nav-active active">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>公司帳戶管理</span>
+                        </a>
+                    </li>
+                    <li class=" nav-active">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>變動申請管理</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+        <!-- /左側選單 -->
+        <div class="main-content">
+            <!-- BEGIN TOPBAR -->
+            <div class="topbar">
+                <div class="header-left">
+                    <div class="topnav">
+                        <a class="menutoggle" href="#" data-toggle="sidebar-collapsed">
+                            <span class="menu__handle">
+                                <span>Menu</span>
+                            </span>
+                        </a>
+                        <h4 class="topnavTitle">
+                            物業雲 管理後台
+                        </h4>
+
+                    </div>
+
+                </div>
+                <div class="header-right">
+                    <ul class="header-menu nav navbar-nav">
+
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="fa fa-ellipsis-v" style="font-size:20px; color:#fff"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header clearfix">
+                                    <p class="pull-left">12 Pending Notifications</p>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list withScroll" data-height="220">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-star p-r-10 f-18 c-orange"></i>
+                                                Steve have rated your photo
+                                                <span class="dropdown-time">Just now</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-heart p-r-10 f-18 c-red"></i>
+                                                John added you to his favs
+                                                <span class="dropdown-time">15 mins</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-file-text p-r-10 f-18"></i>
+                                                New document available
+                                                <span class="dropdown-time">22 mins</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-picture-o p-r-10 f-18 c-blue"></i>
+                                                New picture added
+                                                <span class="dropdown-time">40 mins</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-bell p-r-10 f-18 c-orange"></i>
+                                                Meeting in 1 hour
+                                                <span class="dropdown-time">1 hour</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-bell p-r-10 f-18"></i>
+                                                Server 5 overloaded
+                                                <span class="dropdown-time">2 hours</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-comment p-r-10 f-18 c-gray"></i>
+                                                Bill comment your post
+                                                <span class="dropdown-time">3 hours</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-picture-o p-r-10 f-18 c-blue"></i>
+                                                New picture added
+                                                <span class="dropdown-time">2 days</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-footer clearfix">
+                                    <a href="#" class="pull-left">See all notifications</a>
+                                    <a href="#" class="pull-right">
+                                        <i class="icon-settings"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!-- header-right -->
+            </div>
+            <div class="page-content" style="overflow:visible">
+                <div class="header">
+                    <h2>
+                        <strong>公司帳戶管理 API</strong>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="col-xs-6 col-sm-3">
+                                <select class="bootstrap-select bs-select-default" title="地區" data-actions-box="true" data-live-search="true" multiple>
+                                    <option>基隆市</option>
+                                    <option>台北市</option>
+                                    <option>台中市</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <select class="bootstrap-select bs-select-default" title="地區" data-actions-box="true" data-live-search="true" multiple>
+                                    <option>基隆市</option>
+                                    <option>台北市</option>
+                                    <option>台中市</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 clearfix mt-xs-20">
+                                <button class="btn btn-primary">查詢</button>
+                                <button class="btn btn-primary">清除條件</button>
+                                <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#modal-responsive">
+                                    <i class="fa fa-plus"></i> 新增公司帳戶</a>
+                            </div>
+                            <div class="col-xs-12 mt-20">
+                                <div class="row">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>編號</th>
+                                                <th>公司名稱</th>
+                                                <th>公司帳戶</th>
+                                                <th>據點</th>
+                                                <th>功能</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Steve</td>
+                                                <td>Mac Queen</td>
+                                                <td>@steve</td>
+                                                <td>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <ul class="pagination pagniation-default pull-right">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">
+                                                    <i class="fa fa-angle-double-left"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <i class="fa fa-angle-double-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TOPBAR -->
+
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END MAIN CONTENT -->
+        <!-- BEGIN BUILDER -->
+        <div class="builder hidden-sm hidden-xs" id="builder">
+            <a class="builder-toggle">
+                <i class="icon-wrench"></i>
+            </a>
+            <div class="inner">
+                <div class="builder-container">
+                    <a href="#" class="btn btn-sm btn-default" id="reset-style">reset default style</a>
+                    <h4>Layout options</h4>
+                    <div class="layout-option">
+                        <span> Fixed Sidebar</span>
+                        <label class="switch pull-right">
+                            <input data-layout="sidebar" id="switch-sidebar" type="checkbox" class="switch-input" checked>
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                    <div class="layout-option">
+                        <span> Sidebar on Hover</span>
+                        <label class="switch pull-right">
+                            <input data-layout="sidebar-hover" id="switch-sidebar-hover" type="checkbox" class="switch-input">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                    <div class="layout-option">
+                        <span> Submenu on Hover</span>
+                        <label class="switch pull-right">
+                            <input data-layout="submenu-hover" id="switch-submenu-hover" type="checkbox" class="switch-input">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                    <div class="layout-option">
+                        <span>Fixed Topbar</span>
+                        <label class="switch pull-right">
+                            <input data-layout="topbar" id="switch-topbar" type="checkbox" class="switch-input" checked>
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                    <div class="layout-option">
+                        <span>Boxed Layout</span>
+                        <label class="switch pull-right">
+                            <input data-layout="boxed" id="switch-boxed" type="checkbox" class="switch-input">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                    <h4 class="border-top">Color</h4>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="theme-color bg-dark" data-main="default" data-color="#2B2E33"></div>
+                            <div class="theme-color background-primary" data-main="primary" data-color="#319DB5"></div>
+                            <div class="theme-color bg-red" data-main="red" data-color="#C75757"></div>
+                            <div class="theme-color bg-green" data-main="green" data-color="#1DA079"></div>
+                            <div class="theme-color bg-orange" data-main="orange" data-color="#D28857"></div>
+                            <div class="theme-color bg-purple" data-main="purple" data-color="#B179D7"></div>
+                            <div class="theme-color bg-blue" data-main="blue" data-color="#4A89DC"></div>
+                        </div>
+                    </div>
+                    <h4 class="border-top">Theme</h4>
+                    <div class="row row-sm">
+                        <div class="col-xs-6">
+                            <div class="theme clearfix sdtl" data-theme="sdtl">
+                                <div class="header theme-left"></div>
+                                <div class="header theme-right-light"></div>
+                                <div class="theme-sidebar-dark"></div>
+                                <div class="bg-light"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="theme clearfix sltd" data-theme="sltd">
+                                <div class="header theme-left"></div>
+                                <div class="header theme-right-dark"></div>
+                                <div class="theme-sidebar-light"></div>
+                                <div class="bg-light"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="theme clearfix sdtd" data-theme="sdtd">
+                                <div class="header theme-left"></div>
+                                <div class="header theme-right-dark"></div>
+                                <div class="theme-sidebar-dark"></div>
+                                <div class="bg-light"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="theme clearfix sltl" data-theme="sltl">
+                                <div class="header theme-left"></div>
+                                <div class="header theme-right-light"></div>
+                                <div class="theme-sidebar-light"></div>
+                                <div class="bg-light"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="border-top">Background</h4>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="bg-color bg-clean" data-bg="clean" data-color="#F8F8F8"></div>
+                            <div class="bg-color bg-lighter" data-bg="lighter" data-color="#EFEFEF"></div>
+                            <div class="bg-color bg-light-default" data-bg="light-default" data-color="#E9E9E9"></div>
+                            <div class="bg-color bg-light-blue" data-bg="light-blue" data-color="#E2EBEF"></div>
+                            <div class="bg-color bg-light-purple" data-bg="light-purple" data-color="#E9ECF5"></div>
+                            <div class="bg-color bg-light-dark" data-bg="light-dark" data-color="#DCE1E4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END BUILDER -->
+    </section>
+    <!-- BEGIN QUICKVIEW SIDEBAR -->
+
+
+
+    <!-- 彈窗 -->
+    <div class="modal fade" id="modal-responsive" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="icons-office-52"></i>
+                    </button>
+                    <h4 class="modal-title">
+                        <strong>新增公司帳戶</strong>
+                    </h4>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <form class="form-horizontal form-validation" id="DemoForm">
+                            <div class="form-group">
+                                <label for="companyName" class="control-label col-xs-12 col-sm-3">公司名稱
+                                    <span class="text-danger text-star visible-xs d-xs-inline">*</span>
+                                </label>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input type="text" class="form-control" name="companyName" id="companyName" required>
+                                </div>
+                                <div class="col-sm-3 hidden-xs">
+                                    <span class="text-danger text-star d-block mt-6">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyAccount" class="control-label col-sm-3">公司帳號
+                                    <span class="text-danger text-star visible-xs d-xs-inline">*</span>
+                                </label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="companyAccount" name="companyAccount" required>
+                                </div>
+                                <div class="col-sm-3 hidden-xs">
+                                    <span class="text-danger text-star d-block mt-6">*</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4 class="mb-20">新增[所有者]</h4>
+                            <div class="form-group">
+                                <label for="name" class="control-label col-xs-12 col-sm-3">姓名
+                                    <span class="text-danger text-star visible-xs d-xs-inline">*</span>
+                                </label>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-sm-3 hidden-xs">
+                                    <span class="text-danger text-star d-block mt-6">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="control-label col-xs-12 col-sm-3">身份</label>
+                                <div class="col-xs-8 col-sm-6">
+
+                                    <span class="d-block mt-6">使用者</span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="account" class="control-label col-sm-3">帳號</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="account" name="account" required>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="text-dark d-block mt-6">@yuching.com</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label col-sm-3">密碼
+                                    <span class="text-danger text-star visible-xs d-xs-inline">*</span>
+                                </label>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input type="text" class="form-control" id="password" name="password" required>
+                                </div>
+                                <div class="col-sm-3 hidden-xs">
+                                    <span class="text-danger text-star d-block mt-6">*</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-embossed bnt-square">確定</button>
+                                <button type="button" class="btn btn-default btn-embossed bnt-square" data-dismiss="modal">取消</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BEGIN PRELOADER -->
+    <div class="loader-overlay">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+    <a href="#" class="scrollup">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- 基本 js -->
+    <script src="./assets/global/plugins/jquery/jquery-1.11.1.min.js"></script>
+    <script src="./assets/global/plugins/jquery/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="./assets/global/plugins/jquery-ui/jquery-ui-1.11.2.min.js"></script>
+    <script src="./assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/global/plugins/jquery-block-ui/jquery.blockUI.min.js"></script>
+    <script src="./assets/global/plugins/bootstrap-dropdown/bootstrap-hover-dropdown.min.js"></script>
+
+    <!-- sidebar js -->
+    <script src="./assets/global/js/sidebar_hover.js"></script>
+
+    <!-- 版面顏色切換 -->
+    <script src="./assets/global/js/builder.js"></script>
+
+    <!-- 主要的應用程式 js -->
+    <script src="./assets/global/js/application.js"></script>
+
+    <script src="./assets/global/js/plugins.js"></script>
+    <!-- Main Plugin Initialization Script -->
+    <script src="./assets/global/js/widgets/notes.js"></script>
+    <!-- Notes Widget -->
+    <script src="./assets/global/js/quickview.js"></script>
+    <!-- Chat Script -->
+
+    <!-- BEGIN PAGE SCRIPT -->
+
+    <script src="./assets/global/js/widgets/todo_list.js"></script>
+
+    <!-- Flipping Panel -->
+
+    <script src="./assets/global/js/pages/dashboard.js"></script>
+    <!-- END PAGE SCRIPT -->
+    <script src="./assets/admin/layout1/js/layout.js"></script>
+
+
+    <!-- 外掛 -->
+
+    <!-- GSAP 動畫 -->
+    <!-- <script src="./assets/global/plugins/gsap/main-gsap.min.js"></script>  -->
+
+    <!-- Alertbox -->
+    <!-- <script src="./assets/global/plugins/bootbox/bootbox.min.js"></script> -->
+
+    <!-- sparkline 統計報表摺線  -->
+    <!-- <script src="./assets/global/plugins/charts-sparkline/sparkline.min.js"></script>  -->
+
+    <!-- Retina Display  -->
+    <!-- <script src="./assets/global/plugins/retina/retina.min.js"></script>  -->
+
+    <!-- select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js "></script>
+    <!-- checkbox -->
+    <!-- <script src="./assets/global/plugins/icheck/icheck.min.js"></script> -->
+
+    <!-- Background Image 背景圖延展 -->
+    <!-- <script src="./assets/global/plugins/backstretch/backstretch.min.js"></script> -->
+
+    <!-- noty的通知(信息提示)插件 -->
+    <!-- <script src="./assets/global/plugins/noty/jquery.noty.packaged.min.js"></script> -->
+
+    <!-- bootstrap X-editable 表格編輯工具 -->
+    <!-- <script src="./assets/global/plugins/bootstrap-editable/js/bootstrap-editable.min.js"></script> -->
+
+    <!-- bootstrap Context Menu 環境選單-->
+    <!-- <script src="./assets/global/plugins/bootstrap-context-menu/bootstrap-contextmenu.min.js"></script> -->
+
+    <!-- bootstrap Animated Progress Bar -->
+    <!-- <script src="./assets/global/plugins/bootstrap-progressbar/bootstrap-progressbar.min.js"></script> -->
+
+    <!-- metrojs 動畫-->
+    <!-- <link href="./assets/global/plugins/metrojs/metrojs.min.css" rel="stylesheet"> -->
+    <!-- <script src="./assets/global/plugins/metrojs/metrojs.min.js"></script> -->
+
+    <!-- AMCHARTS 圖表製作工具 -->
+    <script src="./assets/global/plugins/maps-amcharts/ammap/ammap.min.js"></script>
+    <script src="./assets/global/plugins/maps-amcharts/ammap/maps/js/worldLow.min.js"></script>
+    <script src="./assets/global/plugins/maps-amcharts/ammap/themes/black.min.js"></script>
+
+    <!-- ChartJS Chart 圖表製作工具-->
+    <!-- <script src="./assets/global/plugins/charts-chartjs/Chart.min.js"></script> -->
+
+
+    <!-- skycons 天氣動態圖氏 -->
+    <!-- <script src="./assets/global/plugins/skycons/skycons.min.js"></script> -->
+
+    <!-- Weather Plugin -->
+    <!-- <script src="./assets/global/plugins/simple-weather/jquery.simpleWeather.js"></script>
+    <script src="./assets/global/js/widgets/widget_weather.js"></script> -->
+
+    <!-- 客製化滾動條 -->
+    <script src="./assets/global/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- 輕量讀取、寫入、刪除 Cookie -->
+    <script src="./assets/global/plugins/jquery-cookies/jquery.cookies.min.js"></script>
+
+    <!-- 股票圖表 https://www.hcharts.cn/products/highstock -->
+    <script src="./assets/global/plugins/charts-highstock/js/highstock.min.js"></script>
+    <script src="./assets/global/plugins/charts-highstock/js/modules/exporting.min.js"></script>
+
+    <!-- Multi dates Picker -->
+    <!-- <script src="./assets/global/plugins/multidatepicker/multidatespicker.min.js"></script> -->
+
+    <!-- Search Script -->
+    <!-- <script src="./assets/global/js/pages/search.js"></script> -->
+
+    <!-- 表單驗證 -->
+    <script src="./assets/global/plugins/jquery-validation/jquery.validate.js"></script>
+
+
+    <script>
+        $('.bootstrap-select').selectpicker({
+            'width': '100%',
+            'actionsBox': true,
+            'selectAllText': '全選',
+            'deselectAllText': '取消全選',
+            'dropdownAlignRight': 'auto',
+            'liveSearch': true,
+            'liveSearchNormalize': true,
+            'liveSearchPlaceholder': '搜尋關鍵字',
+            'liveSearchStyle': 'contains',
+            'noneSelectedText': '請選擇一個項目',
+            'noneResultsText': '找不到含有 {0} 的項目',
+            'showIcon': false
+        });
+    </script>
+    <script>
+        $("#DemoForm").validate({
+            rules: {
+                companyName: "required",
+                companyAccount: 'required',
+                name: 'required',
+                account: 'required',
+                password: 'reqired'
+
+            },
+            messages: {
+                companyName: "請輸入您的公司名稱",
+                companyAccount: '請輸入您的公司帳號',
+                name: '請輸入姓名',
+                account: '請輸入帳號',
+                password: '請輸入密碼'
+
+            }
+        })
+    </script>
+</body>
+
+</html>

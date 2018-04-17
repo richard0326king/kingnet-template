@@ -1,0 +1,38 @@
+.pagniation-default {
+  li {
+    margin: 0;
+    &:last-child > a,
+    &:last-child > span,
+    &:first-child > a,
+    &:first-child > span a {
+      padding: 6px 12px !important;
+    }
+    &:first-child {
+      > a {
+        i {
+          padding-right: 0 !important;
+        }
+      }
+    }
+    &:last-child {
+      > a {
+        i {
+          padding-right: 0 !important;
+        }
+      }
+    }
+    a {
+      border: 1px solid #ccc;
+      color: #333;
+      border-radius: 4px;
+      &:hover {
+        background: #ccc;
+        color: #fff;
+      }
+      &.active {
+        background: #ccc;
+        color: #fff;
+      }
+    }
+  }
+}
